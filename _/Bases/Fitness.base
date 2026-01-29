@@ -1,0 +1,24 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Fitness"))
+views:
+  - type: table
+    name: Fitness
+    order:
+      - file.name
+      - Type
+    columnSize:
+      file.name: 335
+      note.isbn: 166
+  - type: table
+    name: Exercise
+    filters:
+      and:
+        - Type == ["Exercise"]
+    order:
+      - file.name
+      - Type
+    columnSize:
+      file.name: 335
+      note.isbn: 166

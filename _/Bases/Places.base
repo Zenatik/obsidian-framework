@@ -1,0 +1,28 @@
+filters:
+  and:
+    - '!file.name.contains("Template")'
+    - categories.containsAny(link("Places"))
+views:
+  - type: table
+    name: Places
+    order:
+      - file.name
+      - type
+      - locations
+  - type: table
+    name: Places By Location
+    filters:
+      and:
+        - locations.contains(this.file.name)
+    order:
+      - file.name
+      - type
+      - locations
+  - type: table
+    name: Hotels
+    filters:
+      and:
+        - type == ["Hotel"]
+    order:
+      - file.name
+      - business

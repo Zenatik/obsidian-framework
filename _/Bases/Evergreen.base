@@ -1,0 +1,19 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Evergreen"))
+views:
+  - type: table
+    name: Evergreen
+    order:
+      - file.name
+      - last
+      - categories
+      - created
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: categories
+        direction: DESC
+      - property: last
+        direction: DESC

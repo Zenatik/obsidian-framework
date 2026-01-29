@@ -1,0 +1,85 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("People"))
+views:
+  - type: table
+    name: People
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Group
+    filters:
+      and:
+        - Type == "Group"
+    order:
+      - file.name
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Contact
+    filters:
+      and:
+        - Type == "Contact"
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Provider
+    filters:
+      and:
+        - Type == ["Provider"]
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Collaborator
+    filters:
+      and:
+        - Type == ["Collaborator"]
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Figure
+    filters:
+      and:
+        - Type == ["Figure"]
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created
+  - type: table
+    name: Creator
+    filters:
+      and:
+        - Type == "Creator"
+    order:
+      - file.name
+      - email
+      - Type
+      - relationship
+      - context
+      - created

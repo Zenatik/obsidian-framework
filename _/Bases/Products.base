@@ -1,0 +1,46 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Products"))
+views:
+  - type: table
+    name: Products
+    order:
+      - file.name
+      - Type
+      - url
+      - price
+      - qty
+      - people
+      - created
+      - completion
+  - type: table
+    name: Unpurchased by Person
+    filters:
+      and:
+        - people.contains(this.file.name)
+        - purchased.isEmpty()
+    order:
+      - file.name
+      - qty
+      - price
+      - url
+  - type: table
+    name: Products by Project
+    filters:
+      and:
+        - projects.contains(this.file.name)
+        - purchased.isEmpty()
+    order:
+      - file.name
+      - qty
+      - price
+      - url
+  - type: table
+    name: Software
+    filters:
+      and:
+        - categories.containsAny(link("Software"))
+    order:
+      - file.name
+      - type

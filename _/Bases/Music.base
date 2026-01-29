@@ -1,0 +1,74 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Music"))
+views:
+  - type: table
+    name: Music
+    order:
+      - file.name
+      - type
+      - artist
+      - url
+  - type: table
+    name: Albums
+    filters:
+      and:
+        - Type == ["Album"]
+    order:
+      - file.name
+      - type
+      - artist
+      - url
+  - type: table
+    name: Songs
+    filters:
+      and:
+        - Type == ["Song"]
+    order:
+      - file.name
+      - type
+      - artist
+      - url
+  - type: table
+    name: Artists
+    filters:
+      and:
+        - Type == ["Artist"]
+    order:
+      - file.name
+      - type
+      - url
+  - type: table
+    name: Albums by Artist
+    filters:
+      and:
+        - artist.contains(this.file.name)
+        - Type == ["Album"]
+    order:
+      - file.name
+      - type
+      - artist
+      - url
+  - type: table
+    name: Songs by Artist
+    filters:
+      and:
+        - artist.contains(this.file.name)
+        - Type == ["Song"]
+    order:
+      - file.name
+      - type
+      - artist
+      - url
+  - type: table
+    name: Songs by Album
+    filters:
+      and:
+        - album.contains(this.file.name)
+        - Type == ["Song"]
+    order:
+      - file.name
+      - type
+      - artist
+      - url

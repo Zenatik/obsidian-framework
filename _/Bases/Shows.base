@@ -1,0 +1,14 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Shows"))
+views:
+  - type: table
+    name: Shows
+    order:
+      - file.name
+      - Type
+      - completion
+    columnSize:
+      file.name: 335
+      note.isbn: 166

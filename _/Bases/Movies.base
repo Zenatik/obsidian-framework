@@ -1,0 +1,34 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Movies"))
+views:
+  - type: cards
+    name: Movies
+    order:
+      - file.name
+      - url
+      - rating
+      - completion
+    columnSize:
+      file.name: 335
+      note.isbn: 166
+    cardSize: 250
+    imageAspectRatio: 1.5
+    image: image
+  - type: cards
+    name: Movies to Watch
+    filters:
+      and:
+        - completion.isEmpty()
+    order:
+      - file.name
+      - url
+      - rating
+      - completion
+    columnSize:
+      file.name: 335
+      note.isbn: 166
+    cardSize: 250
+    imageAspectRatio: 1.5
+    image: image

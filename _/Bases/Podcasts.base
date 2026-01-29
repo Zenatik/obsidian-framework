@@ -1,0 +1,53 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Podcasts"))
+views:
+  - type: table
+    name: Podcasts & Episodes
+    order:
+      - file.name
+      - type
+      - tags
+      - podcast
+      - completion
+      - hosts
+    columnSize:
+      file.name: 263
+  - type: table
+    name: Episodes By Podcast
+    filters:
+      and:
+        - podcast.contains(this.file.name)
+    order:
+      - file.name
+      - completion
+      - hosts
+    columnSize:
+      file.name: 263
+  - type: table
+    name: All Podcasts
+    filters:
+      and:
+        - tags.contains("resource/podcasts")
+    order:
+      - file.name
+      - tags
+      - podcast
+      - completion
+      - hosts
+    columnSize:
+      file.name: 263
+  - type: table
+    name: All Episodes
+    filters:
+      and:
+        - tags.contains("resource/podcast-episodes")
+    order:
+      - file.name
+      - tags
+      - podcast
+      - completion
+      - hosts
+    columnSize:
+      file.name: 263

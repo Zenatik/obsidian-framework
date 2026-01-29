@@ -1,0 +1,22 @@
+filters:
+  or:
+    - and:
+        - '!file.name.endsWith("Template")'
+        - or:
+            - file.links.contains(this.file.name)
+            - created == this.file.name
+            - last == this.file.name
+            - completion == this.file.name
+        - file.ext != "base"
+        - file.name != this.file.name
+views:
+  - type: table
+    name: Daily Notes
+    order:
+      - file.name
+      - tags
+      - completion
+      - last
+      - created
+    columnSize:
+      formula.created: 114

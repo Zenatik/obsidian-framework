@@ -1,0 +1,30 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - file.ext != "base"
+    - or:
+        - and:
+            - completion.format("MM-DD") == date(this.file.name).format("MM-DD")
+            - "!completion.isEmpty()"
+            - completion.year != date(this.file.name).format("YYYY")
+        - and:
+            - last.format("MM-DD") == date(this.file.name).format("MM-DD")
+            - "!last.isEmpty()"
+            - last.year != date(this.file.name).format("YYYY")
+formulas:
+  Year: if(!completion.isEmpty(),completion.year,if(!last.isEmpty(),last.year,file.ctime.year))
+views:
+  - type: table
+    name: On This Day
+    order:
+      - formula.Year
+      - file.name
+      - tags
+      - completion
+      - last
+      - created
+    sort:
+      - property: formula.Year
+        direction: DESC
+      - property: formula.created
+        direction: ASC

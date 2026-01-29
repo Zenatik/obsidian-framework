@@ -1,0 +1,12 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Goals"))
+views:
+  - type: table
+    name: Goals
+    order:
+      - file.name
+      - type
+      - locations
+      - completion

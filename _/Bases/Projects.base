@@ -1,0 +1,23 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Projects"))
+views:
+  - type: table
+    name: Projects
+    order:
+      - file.name
+      - Type
+      - start
+      - completion
+    columnSize:
+      file.name: 335
+      note.isbn: 166
+  - type: table
+    name: Homelab Projects
+    filters:
+      and:
+        - type == "Homelab Project"
+    order:
+      - file.name
+      - type

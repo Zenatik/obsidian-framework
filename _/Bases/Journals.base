@@ -1,0 +1,40 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Journals"))
+views:
+  - type: table
+    name: Journals
+    order:
+      - file.name
+      - Type
+      - tags
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 138
+  - type: table
+    name: Monthly
+    filters:
+      and:
+        - tags.contains("monthly")
+    order:
+      - file.name
+      - tags
+  - type: table
+    name: Daily
+    filters:
+      and:
+        - tags.contains("daily")
+    order:
+      - file.name
+      - tags
+  - type: table
+    name: Yearly
+    filters:
+      and:
+        - tags.contains("yearly")
+    order:
+      - file.name
+      - tags

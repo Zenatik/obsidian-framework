@@ -1,0 +1,12 @@
+filters:
+  and:
+    - '!file.name.endsWith("Template")'
+    - categories.containsAny(link("Recipes"))
+views:
+  - type: table
+    name: Recipes
+    order:
+      - file.name
+      - Type
+      - tags
+    sort: []
