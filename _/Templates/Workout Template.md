@@ -3,13 +3,14 @@ categories:
   - "[[Fitness]]"
 type:
   - Workout
+tags: []
+privacy: personal
 workout:
   - Run
   - Walk
   - Strength
   - Stretch
   - Bike
-tags: []
 duration:
 calories:
 weight:

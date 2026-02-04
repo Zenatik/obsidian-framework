@@ -3,6 +3,7 @@ categories:
   - "[[Events]]"
 type: Meeting
 tags: []
+privacy: personal
 attendees: []
 start:
 completion:

@@ -2,6 +2,7 @@
 categories:
   - "[[Books]]"
 tags: []
+privacy: public
 author:
 genre:
 pages:

@@ -4,6 +4,7 @@ categories:
 type:
   - Creator
 tags: []
+privacy: public
 url:
 rating:
 created: {{date:YYYY-MM-DD}}

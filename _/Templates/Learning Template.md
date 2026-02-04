@@ -3,6 +3,7 @@ categories:
   - "[[Learning]]"
 type:
 tags: []
+privacy: shared
 start:
 completion:
 locations:

@@ -2,6 +2,7 @@
 categories: 
   - "[[Shows]]"
 tags: []
+privacy: public
 poster:
 url:
 rating:

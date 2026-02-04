@@ -6,6 +6,7 @@ type:
   - Node.js
   - bash
 tags: []
+privacy: public
 url:
 rating:
 created: {{date:YYYY-MM-DD}}

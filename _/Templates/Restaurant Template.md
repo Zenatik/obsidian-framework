@@ -3,6 +3,7 @@ categories:
   - "[[Places]]"
 type: Restaurant
 tags: []
+privacy: public
 company: 
 locations: []
 phone:

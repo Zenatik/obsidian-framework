@@ -4,6 +4,7 @@ categories:
   - "[[Travel]]"
 type: Trip
 tags: []
+privacy: personal
 start:
 completion:
 locations: []

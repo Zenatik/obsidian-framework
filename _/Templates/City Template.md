@@ -3,6 +3,7 @@ categories:
   - "[[Places]]"
 type: City
 tags: []
+privacy: public
 locations:
 lat:
 long:

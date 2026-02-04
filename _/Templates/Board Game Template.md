@@ -3,6 +3,7 @@ categories:
   - "[[Games]]"
 type: Boardgame
 tags: []
+privacy: public
 subType:
 rating:
 status:

@@ -2,7 +2,8 @@
 categories:
   - "[[Games]]"
 type: Videogame
-tags:
+tags: []
+privacy: public
 rating:
 status:
 completion:

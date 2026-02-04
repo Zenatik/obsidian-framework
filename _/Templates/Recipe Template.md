@@ -3,6 +3,7 @@ categories:
   - "[[Recipes]]"
 type:
 tags: []
+privacy: public
 cuisine:
 servings:
 prep-time:

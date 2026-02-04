@@ -4,6 +4,7 @@ categories:
   - "[[Products]]"
 type: App
 tags: []
+privacy: public
 company:
 url:
 platforms: []

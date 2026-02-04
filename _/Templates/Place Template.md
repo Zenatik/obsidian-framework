@@ -2,8 +2,8 @@
 categories: 
   - "[[Places]]"
 tags: []
+privacy: public
 type: 
-
 business:
 locations:
 address:

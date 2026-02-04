@@ -3,6 +3,7 @@ categories:
   - "[[Places]]"
 type: Website
 tags: []
+privacy: public
 locations:
   - "[[Internet]]"
 url:

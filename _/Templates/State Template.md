@@ -2,6 +2,7 @@
 categories: 
   - "[[Places]]"
 tags: []
+privacy: public
 type: State
 locations: []
 lat:

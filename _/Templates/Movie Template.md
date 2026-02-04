@@ -2,6 +2,7 @@
 categories: 
   - "[[Movies]]"
 tags: []
+privacy: public
 rating:
 status:
 completion:

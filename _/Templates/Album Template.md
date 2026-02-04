@@ -3,6 +3,7 @@ categories:
   - "[[Music]]"
 type: Album
 tags: []
+privacy: public
 artist:
 year:
 genre:

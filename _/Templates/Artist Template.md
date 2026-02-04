@@ -3,6 +3,7 @@ categories:
   - "[[Music]]"
 type: Artist
 tags: []
+privacy: public
 url:
 rating:
 created: {{date:YYYY-MM-DD}}

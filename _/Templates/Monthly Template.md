@@ -4,6 +4,7 @@ categories:
 type: Monthly
 tags: 
   - monthly
+privacy: private
 created: {{date:YYYY-MM-DD}}
 ---
 ## Context

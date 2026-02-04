@@ -3,7 +3,9 @@ categories:
   - "[[Snippets]]"
 type: 
   - "AI Prompt"
-tags: ai
+tags: 
+  - ai
+privacy: public
 rating:
 created: {{date:YYYY-MM-DD}}
 ---

@@ -4,6 +4,7 @@ categories:
   - "[[Events]]"
 type: Medical
 tags: []
+privacy: private
 start:
 locations:
 created: {{date:YYYY-MM-DD}}

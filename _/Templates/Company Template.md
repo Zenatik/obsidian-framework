@@ -3,6 +3,7 @@ categories:
   - "[[Companies]]"
 type: 
 tags: []
+privacy: public
 locations: []
 phone:
 address:

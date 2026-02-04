@@ -3,7 +3,9 @@ categories:
   - "[[Journals]]"
 type:
   - Daily
-tags: daily
+tags: 
+  - daily
+privacy: personal
 locations:
   - "[[Armour Drive House]]"
 weather:

@@ -2,7 +2,10 @@
 categories:
   - "[[Journals]]"
 type: Yearly
-tags: yearly
+tags: 
+  - yearly
+tags: []
+privacy: personal
 created: {{date:YYYY-MM-DD}}
 ---
 ## Context

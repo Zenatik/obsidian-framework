@@ -3,6 +3,7 @@ categories:
   - "[[Projects]]"
 type: House Project
 tags: []
+privacy: shared
 locations:
 estimate:
 actualcost:

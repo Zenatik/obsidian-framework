@@ -2,7 +2,8 @@
 categories: 
   - "[[Podcasts]]"
 type: Podcast
-tags:
+tags: []
+privacy: public
 url:
 publisher:
 hosts:

@@ -4,6 +4,7 @@ categories:
   - "[[Projects]]"
 type: 
 tags: []
+privacy: shared
 start:
 completion:
 created: {{date:YYYY-MM-DD}}

@@ -8,6 +8,7 @@ aliases: []
 phone:
 email:
 tags: []
+privacy: personal
 created: {{date:YYYY-MM-DD}}
 ---
 ## Context

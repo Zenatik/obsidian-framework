@@ -3,7 +3,8 @@ categories:
   - "[[Evergreen]]"
 tags:
   - evergreen
-last: {date:YYYY-MM-DD}
+privacy: public
+last: {{date:YYYY-MM-DD}}
 created: {{date:YYYY-MM-DD}}
 ---
 ## Context

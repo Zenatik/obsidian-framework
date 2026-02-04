@@ -3,6 +3,7 @@ categories:
   - "[[Products]]"
 type: 
 tags: []
+privacy: shared
 people:
 projects:
 url:
