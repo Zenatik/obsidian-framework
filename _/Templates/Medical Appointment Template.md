@@ -22,7 +22,7 @@ created: {{date:YYYY-MM-DD}}
 ## Reason for Visit
 ### Main Concerns
 - concern
-### Symptons/Questions/Goals
+### Symptoms/Questions/Goals
 
 
 ## Notes & Observations
